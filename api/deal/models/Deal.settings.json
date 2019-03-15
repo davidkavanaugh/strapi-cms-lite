@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "deals",
+  "info": {
+    "name": "deal",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "item": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "default": "",
+      "type": "text"
+    },
+    "price": {
+      "default": "",
+      "type": "decimal"
+    },
+    "unit": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "connection": "default",
+  "collectionName": "miscpages",
+  "info": {
+    "name": "miscpage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "default": "",
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "content": {
+      "default": "",
+      "type": "text"
+    },
+    "phone": {
+      "default": "",
+      "type": "string"
+    },
+    "email": {
+      "default": "",
+      "type": "email"
+    },
+    "price": {
+      "default": "",
+      "type": "decimal"
+    },
+    "buttontext": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

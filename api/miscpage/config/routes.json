@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/miscpages",
+      "handler": "Miscpage.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/miscpages/count",
+      "handler": "Miscpage.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/miscpages/:id",
+      "handler": "Miscpage.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/miscpages",
+      "handler": "Miscpage.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/miscpages/:id",
+      "handler": "Miscpage.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/miscpages/:id",
+      "handler": "Miscpage.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
